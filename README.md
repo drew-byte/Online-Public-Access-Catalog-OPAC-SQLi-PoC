@@ -1,20 +1,16 @@
 # Online Public Access Catalog (OPAC) SQL Injection PoC
 
-**Vulnerability Type:** SQL Injection
-</br>
-**Affected File:** ``mysearch.php``
-</br>
-**Parameter:** ``search_field (POST)``
-</br>
-**Vendor:** [itsourcecode](https://itsourcecode.com/)
-</br>
-**Product:** [Online Public Access Catalog OPAC](https://itsourcecode.com/free-projects/php-project/online-public-access-catalog-opac-php-mysqli/)
-</br>
-**Softlink:** https://itsourcecode.com/free-projects/php-project/online-public-access-catalog-opac-php-mysqli/
-</br>
-**Database:** I fixed the ``library.db`` file because the vendor had a wrong configuration in the published file. [library.db](https://github.com/drew-byte/Online-Public-Access-Catalog-OPAC-SQLi-PoC/blob/main/library.db)
-</br>
-**DB Softlink:** https://github.com/drew-byte/Online-Public-Access-Catalog-OPAC-SQLi-PoC/blob/main/library.db
+|             | Details |
+|-------------------|---------|
+| **Vulnerability Type** | SQL Injection |
+| **Affected File** | `mysearch.php` |
+| **Parameter** | `search_field (POST)` |
+| **Vendor** | [itsourcecode](https://itsourcecode.com/) |
+| **Product** | [Online Public Access Catalog OPAC](https://itsourcecode.com/free-projects/php-project/online-public-access-catalog-opac-php-mysqli/) |
+| **Softlink** | https://itsourcecode.com/free-projects/php-project/online-public-access-catalog-opac-php-mysqli/ |
+| **Database** | Fixed `library.db` file because the vendor had a wrong configuration in the published file. [library.db](https://github.com/drew-byte/Online-Public-Access-Catalog-OPAC-SQLi-PoC/blob/main/library.db) |
+| **DB Softlink** | https://github.com/drew-byte/Online-Public-Access-Catalog-OPAC-SQLi-PoC/blob/main/library.db |
+
 
 ### Summary
 -  The ``mysearch.php`` file of the application is vulnerable to multiple forms of SQL Injection due to unsanitized user input being concatenated directly into SQL statements. Attackers can manipulate the ``search_field`` and search_text POST parameters to inject malicious SQL. This allows for boolean-based blind, time-based blind, and UNION-based injection techniques, enabling database enumeration and data exfiltration.
