@@ -1,4 +1,4 @@
-# Online-Public-Access-Catalog OPAC SQL Injection
+# Online Public Access Catalog (OPAC) SQL Injection PoC
 
 **Vulnerability Type:** SQL Injection
 </br>
