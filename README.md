@@ -10,7 +10,11 @@
 </br>
 **Product:** [Online Public Access Catalog OPAC](https://itsourcecode.com/free-projects/php-project/online-public-access-catalog-opac-php-mysqli/)
 </br>
+**Softlink:** https://itsourcecode.com/free-projects/php-project/online-public-access-catalog-opac-php-mysqli/
+</br>
 **Database:** I fixed the ``library.db`` file because the vendor had a wrong configuration in the published file. [library.db](https://github.com/drew-byte/Online-Public-Access-Catalog-OPAC-SQLi-PoC/blob/main/library.db)
+</br>
+**DB Softlink:** https://github.com/drew-byte/Online-Public-Access-Catalog-OPAC-SQLi-PoC/blob/main/library.db
 
 ### Summary
 -  The ``mysearch.php`` file of the application is vulnerable to multiple forms of SQL Injection due to unsanitized user input being concatenated directly into SQL statements. Attackers can manipulate the ``search_field`` and search_text POST parameters to inject malicious SQL. This allows for boolean-based blind, time-based blind, and UNION-based injection techniques, enabling database enumeration and data exfiltration.
