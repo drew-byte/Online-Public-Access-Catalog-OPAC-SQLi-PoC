@@ -51,10 +51,3 @@ $sql = "SELECT * FROM BookDetails WHERE $strField LIKE '$strText'";
 -  Marker appears in the application response, confirming full UNION injection.
 
 ![](./union.png)
-
----
-
-### Impact
--  **Confidentiality (C):** ``UNION`` injection lets an attacker read arbitrary tables, so database disclosure is possible.
--  **Integrity (I):** If the DB user has ``INSERT/UPDATE/DELETE`` rights (very common in apps), the attacker can modify or delete records.
--  **Availability (A):** Time-based injection with ``SLEEP(30)`` or ``BENCHMARK()`` can easily tie up DB threads and cause a denial of service.
