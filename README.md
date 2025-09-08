@@ -1,4 +1,4 @@
-# Online Public Access Catalog (OPAC) SQL Injection PoC
+<img width="1708" height="927" alt="image" src="https://github.com/user-attachments/assets/a7bf826e-ddc3-4bec-9338-3a04fa1cf13a" /># Online Public Access Catalog (OPAC) SQL Injection PoC
 
 |             | Details |
 |-------------------|---------|
@@ -27,6 +27,7 @@ $sql = "SELECT * FROM BookDetails WHERE $strField LIKE '$strText'";
 
 ![](./sqlmap.png)
 
+![](./books_accession.png)
 ---
 
 ### Proof of Concept
